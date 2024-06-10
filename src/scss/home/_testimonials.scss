@@ -1,0 +1,32 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimonials-section{
+    padding: 2rem;
+    position: relative;
+    background: v.$white;
+    @include m.w-tablet {
+        padding: 10rem;
+        margin-top: -10rem;
+    }
+    h2{
+        margin-top: 0;
+    }
+
+    .testimonial{
+        background-color: v.$lightBrown;
+        padding: 2rem 4rem;
+        margin: 0 auto;
+        max-width: 50rem;
+        border-radius: 1rem;
+
+        .autor{
+            text-align: right;
+            color: v.$primary;
+            font-weight: 700;
+            font-size: 1.5rem;
+            font-family: v.$cursiveFont;
+        }
+    }
+}
